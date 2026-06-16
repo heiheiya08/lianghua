@@ -1,7 +1,6 @@
 
 {
-  "routes": [
-    { "src": "/backtest", "dest": "api/index.py" },
-    { "src": "/", "dest": "/index.html" }
+  "builds": [
+    { "src": "api/index.py", "use": "@vercel/python" }
   ]
 }
