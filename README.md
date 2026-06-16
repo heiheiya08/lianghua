@@ -1,10 +1,12 @@
 
-# Vercel Quant API
+# Quant UI Version
 
-## Deploy Steps
-1. Push to GitHub
-2. Import to Vercel
-3. Auto deploy
+## Deploy to Vercel
+1. push to GitHub
+2. import project
+3. auto deploy
 
-## API
-/backtest?code=sh600519
+## Features
+- UI entry page
+- stock input
+- simple backtest

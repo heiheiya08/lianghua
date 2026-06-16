@@ -5,10 +5,6 @@ import akshare as ak
 
 app = FastAPI()
 
-@app.get("/")
-def home():
-    return {"msg": "Vercel Quant API Running"}
-
 @app.get("/backtest")
 def backtest(code: str = "sh600519"):
     df = ak.stock_zh_a_hist(symbol=code, period="daily", adjust="qfq")
@@ -21,5 +17,7 @@ def backtest(code: str = "sh600519"):
 
     return {
         "code": code,
+        "start": start,
+        "end": end,
         "return_pct": float((end - start) / start * 100)
     }
